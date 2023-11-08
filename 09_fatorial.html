@@ -6,6 +6,16 @@
 
     //Entrada
 
+    let number = Number(prompt(`Insira um numero`));
+    function fatorar(number){
+        if( number == 0){
+            return(1);
+        }else{
+            return(number * fatorar(number - 1))
+        }
+    }
+   alert(`A fatoracao se torna: ${fatorar(number)}`);
+
 
     //Processamento
 

@@ -5,7 +5,20 @@
     */
 
     //Entrada
-
+    let number = Number(prompt(`Insira um numero`));
+    function verificar(number){
+        let verificador = 0
+        for(i = 1; i <= number; i++){
+            if(number%i == 0){ verificador++ }
+        }
+        if(verificador <= 2){ 
+            return("Este numero é Primo")
+        } 
+        else {
+             return("Este numero não é primo")
+            }
+    }
+    alert(verificar(number));
 
     //Processamento
 

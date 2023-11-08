@@ -9,7 +9,13 @@
 
 
     //Processamento
+    let peso = Number(prompt(`Insira o peso`));
+    let altura = Number(prompt(`Insira a altura`));
 
+    function resultado(peso, altura){
+        return  peso/(altura * altura).toFixed(1)
+    }
+    alert(`${resultado(peso, altura)}é o IMC`);
 
     //Saída
 
